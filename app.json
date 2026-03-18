@@ -1,0 +1,230 @@
+{
+  "id": "com.zigbee-double-socket",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "name": {
+    "en": "Zigbee Double Socket"
+  },
+  "description": {
+    "en": "Control both sockets of your Zigbee double socket independently"
+  },
+  "brandColor": "#1E88E5",
+  "tags": {
+    "en": ["zigbee", "socket", "double socket", "outlet", "smart plug"]
+  },
+  "category": ["appliances"],
+  "permissions": [],
+  "images": {
+    "small": "./assets/images/small.png",
+    "large": "./assets/images/large.png",
+    "xlarge": "./assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Andy",
+    "email": "your@email.com"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB/homey-zigbee-double-socket/issues"
+  },
+  "source": "https://github.com/YOUR_GITHUB/homey-zigbee-double-socket",
+  "homeyCommunityTopicId": 0,
+
+  "drivers": [
+    {
+      "id": "aurora_aone",
+      "name": {
+        "en": "Aurora Aone Double Socket"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.socket2",
+        "measure_power",
+        "measure_power.socket2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": { "en": "Socket 1" }
+        },
+        "onoff.socket2": {
+          "title": { "en": "Socket 2" }
+        },
+        "measure_power": {
+          "title": { "en": "Power Socket 1" }
+        },
+        "measure_power.socket2": {
+          "title": { "en": "Power Socket 2" }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": ["Aurora Lighting"],
+        "productId": ["DoubleSocket50AU"],
+        "endpoints": {
+          "1": {
+            "clusters": [0, 3, 4, 5, 6, 2820],
+            "bindings": [6, 2820]
+          },
+          "2": {
+            "clusters": [0, 3, 4, 5, 6, 2820],
+            "bindings": [6, 2820]
+          },
+          "3": {
+            "clusters": [0, 3, 6, 8],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/aurora_aone/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the button on the socket for 5 seconds until the LED flashes rapidly, then release."
+          }
+        }
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": { "next": "add_devices" },
+          "options": { "singular": true }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "./drivers/aurora_aone/assets/images/small.png",
+        "large": "./drivers/aurora_aone/assets/images/large.png",
+        "xlarge": "./drivers/aurora_aone/assets/images/xlarge.png"
+      }
+    },
+
+    {
+      "id": "scolmore_click",
+      "name": {
+        "en": "Scolmore Click Smart+ Double Socket"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.socket2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": { "en": "Socket 1" }
+        },
+        "onoff.socket2": {
+          "title": { "en": "Socket 2" }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TYZB01_hlla45kx"
+        ],
+        "productId": [
+          "TS011F"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [0, 4, 5, 6],
+            "bindings": [6]
+          },
+          "2": {
+            "clusters": [0, 4, 5, 6],
+            "bindings": [6]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/scolmore_click/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold both socket buttons simultaneously for 5 seconds until the LEDs flash, then release."
+          }
+        }
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": { "next": "add_devices" },
+          "options": { "singular": true }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "./drivers/scolmore_click/assets/images/small.png",
+        "large": "./drivers/scolmore_click/assets/images/large.png",
+        "xlarge": "./drivers/scolmore_click/assets/images/xlarge.png"
+      }
+    },
+
+    {
+      "id": "aqara_double",
+      "name": {
+        "en": "Aqara Double Socket"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.socket2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": { "en": "Socket 1" }
+        },
+        "onoff.socket2": {
+          "title": { "en": "Socket 2" }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "LUMI",
+          "Aqara",
+          "aqara"
+        ],
+        "productId": [
+          "lumi.plug.maeu02",
+          "lumi.plug.sp_euc02",
+          "SP-EUC02"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [0, 2, 3, 4, 5, 6, 15, 64704],
+            "bindings": [6]
+          },
+          "2": {
+            "clusters": [0, 2, 3, 4, 5, 6, 15, 64704],
+            "bindings": [6]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/aqara_double/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the reset button on the Aqara socket for 5 seconds until the amber LED flashes three times."
+          }
+        }
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": { "next": "add_devices" },
+          "options": { "singular": true }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "./drivers/aqara_double/assets/images/small.png",
+        "large": "./drivers/aqara_double/assets/images/large.png",
+        "xlarge": "./drivers/aqara_double/assets/images/xlarge.png"
+      }
+    }
+  ]
+}

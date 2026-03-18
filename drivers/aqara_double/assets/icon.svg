@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Aqara double socket icon (EU style - round) -->
+  <rect x="5" y="18" width="90" height="64" rx="7" ry="7" fill="none" stroke="#5C6BC0" stroke-width="4"/>
+  <!-- Left socket (EU round pin) -->
+  <rect x="12" y="27" width="36" height="46" rx="18" ry="18" fill="none" stroke="#5C6BC0" stroke-width="3"/>
+  <ellipse cx="30" cy="59" rx="5" ry="6" fill="#5C6BC0"/>
+  <circle cx="24" cy="37" r="4" fill="#5C6BC0"/>
+  <circle cx="36" cy="37" r="4" fill="#5C6BC0"/>
+  <!-- Right socket (EU round pin) -->
+  <rect x="52" y="27" width="36" height="46" rx="18" ry="18" fill="none" stroke="#5C6BC0" stroke-width="3"/>
+  <ellipse cx="70" cy="59" rx="5" ry="6" fill="#5C6BC0"/>
+  <circle cx="64" cy="37" r="4" fill="#5C6BC0"/>
+  <circle cx="76" cy="37" r="4" fill="#5C6BC0"/>
+</svg>

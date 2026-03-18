@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "Zigbee Double Socket",
+    "description": "Control both sockets of your Zigbee double socket independently"
+  },
+  "drivers": {
+    "aurora_aone": {
+      "name": "Aurora Aone Double Socket",
+      "pair": {
+        "list_devices": {
+          "title": "Found Aurora Aone Double Sockets",
+          "no_devices": "No devices found. Make sure the socket is in pairing mode."
+        }
+      }
+    },
+    "scolmore_click": {
+      "name": "Scolmore Click Smart+ Double Socket",
+      "pair": {
+        "list_devices": {
+          "title": "Found Scolmore Click Smart+ Sockets",
+          "no_devices": "No devices found. Make sure the socket is in pairing mode."
+        }
+      }
+    },
+    "aqara_double": {
+      "name": "Aqara Double Socket",
+      "pair": {
+        "list_devices": {
+          "title": "Found Aqara Double Sockets",
+          "no_devices": "No devices found. Make sure the socket is in pairing mode."
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "onoff": {
+      "socket1": "Socket 1"
+    },
+    "onoff_socket2": {
+      "label": "Socket 2"
+    },
+    "measure_power": {
+      "socket1": "Power Socket 1"
+    },
+    "measure_power_socket2": {
+      "label": "Power Socket 2"
+    }
+  },
+  "errors": {
+    "unknown_device": "This device is not supported. Please check the README for how to add support for your specific model."
+  }
+}

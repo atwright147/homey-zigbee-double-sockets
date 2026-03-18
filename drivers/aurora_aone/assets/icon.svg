@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Aurora Aone double socket icon -->
+  <rect x="5" y="18" width="90" height="64" rx="7" ry="7" fill="none" stroke="#FF6F00" stroke-width="4"/>
+  <!-- Left socket -->
+  <rect x="12" y="27" width="36" height="46" rx="4" ry="4" fill="none" stroke="#FF6F00" stroke-width="3"/>
+  <ellipse cx="30" cy="59" rx="5" ry="6" fill="#FF6F00"/>
+  <rect x="24" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
+  <rect x="33" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
+  <!-- Right socket -->
+  <rect x="52" y="27" width="36" height="46" rx="4" ry="4" fill="none" stroke="#FF6F00" stroke-width="3"/>
+  <ellipse cx="70" cy="59" rx="5" ry="6" fill="#FF6F00"/>
+  <rect x="64" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
+  <rect x="73" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
+</svg>

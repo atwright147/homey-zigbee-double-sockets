@@ -1,0 +1,21 @@
+{
+  "name": "com.zigbee-double-socket",
+  "version": "1.0.0",
+  "description": "Control both sockets of Zigbee double sockets independently",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "homey app validate",
+    "build": "homey app build",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "homey-zigbeedriver": "^2.2.0",
+    "zigbee-clusters": "^2.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
