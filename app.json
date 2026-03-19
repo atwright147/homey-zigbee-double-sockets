@@ -22,13 +22,13 @@
     "xlarge": "./assets/images/xlarge.png"
   },
   "author": {
-    "name": "Andy",
-    "email": "your@email.com"
+    "name": "Andy Wright",
+    "email": "atwright147+homey@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB/homey-zigbee-double-socket/issues"
+    "url": "https://github.com/atwright147/homey-zigbee-double-socket/issues"
   },
-  "source": "https://github.com/YOUR_GITHUB/homey-zigbee-double-socket",
+  "source": "https://github.com/atwright147/homey-zigbee-double-socket",
   "homeyCommunityTopicId": 0,
 
   "drivers": [
