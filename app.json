@@ -29,7 +29,6 @@
     "url": "https://github.com/atwright147/homey-zigbee-double-socket/issues"
   },
   "source": "https://github.com/atwright147/homey-zigbee-double-socket",
-  "homeyCommunityTopicId": 0,
 
   "drivers": [
     {
