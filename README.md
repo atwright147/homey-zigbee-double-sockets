@@ -12,14 +12,19 @@ individually and use them in separate Flows.
 
 | Brand / Model | Driver | Socket 1 | Socket 2 | Power measurement | Fingerprint |
 |---|---|---|---|---|---|
-| **Aurora Aone AU-A1ZBDSS** | `aurora_aone` | ✅ | ✅ | ✅ per socket (ZHA) | ✅ Confirmed |
+| **Aurora Aone AU-A1ZBDSS** | `aurora_aone` | ✅ | ✅ | ❌ firmware bug² | ✅ Confirmed |
 | **Scolmore Click Smart+** | `scolmore_click` | ✅ | ✅ | ❌ Tuya firmware block¹ | ✅ Confirmed |
-| **Aqara SP-EUC02** | `aqara_double` | ✅ | ✅ | ❌ not yet tested | ⚠️ Unconfirmed – see below |
+| **Aqara SP-EUC02** | *(not yet active)* | — | — | — | ⚠️ Unconfirmed – hardware not tested |
 
 ¹ The TS011F hardware has an `haElectricalMeasurement` cluster but Tuya firmware
 ≥1.0.5 (all units produced since Q4 2021) silently ignores all standard ZHA read
 requests. Power data is only accessible via Tuya's proprietary `0xEF00` DPS cluster.
 See [docs/SCOLMORE.md](docs/SCOLMORE.md) for full details.
+
+² The AU-A1ZBDSS `activePower` attribute returns a fixed value (~−8073) regardless
+of actual load — a firmware bug confirmed across multiple clean re-pairs. Power
+measurement is omitted until a firmware fix is available and tested. See
+[docs/AURORA_AONE.md](docs/AURORA_AONE.md) for full details.
 
 ---
 
@@ -51,7 +56,7 @@ Before publishing (or passing full validation) you need to provide PNG images:
 | `assets/images/xlarge.png` | 1000 × 700 px |
 | `drivers/aurora_aone/assets/images/{small,large,xlarge}.png` | same sizes |
 | `drivers/scolmore_click/assets/images/{small,large,xlarge}.png` | same sizes |
-| `drivers/aqara_double/assets/images/{small,large,xlarge}.png` | same sizes |
+| `drivers/aqara_double/assets/images/{small,large,xlarge}.png` | same sizes (required when Aqara driver is re-enabled) |
 
 You can skip image validation during development:
 ```bash
@@ -97,8 +102,8 @@ To find the correct identifiers for the Aqara or any other new device:
    → select your Homey → **Zigbee** tab.
 4. Look for the newly-seen device address and note the `modelID` /
    `manufacturerName`.
-5. Also look in the **App Logs** for the `printNode()` output – this lists every
-   endpoint and cluster the device reports.
+5. Also look in the **App Logs** for the device announcement output — this lists
+   the endpoints and clusters the device reports.
 
 ### Updating the fingerprint
 
@@ -123,13 +128,13 @@ lib/
 drivers/
   aurora_aone/
     driver.js                       ← ZigBeeDriver subclass
-    device.js                       ← Extends base; adds per-socket power
+    device.js                       ← Minimal subclass; all logic in base
   scolmore_click/
     driver.js
-    device.js                       ← Extends base; on/off only
-  aqara_double/
-    driver.js
-    device.js                       ← Extends base; ready for Lumi quirks
+    device.js                       ← Minimal subclass; all logic in base
+  aqara_double/                     ← Not active (removed from app.json);
+    driver.js                          re-enable once fingerprint is confirmed
+    device.js
 docs/
   SCOLMORE.md                       ← Full research notes: fingerprint, endpoint
                                        map, power limitation, DPS data points,
@@ -149,8 +154,9 @@ assets/
    - Add a new entry in the `drivers` array.
    - Set `zigbee.manufacturerName` and `zigbee.productId` to the correct values.
    - List the capabilities the device supports.
-4. If it has power measurement, implement `onSocketsInit` in `device.js` following
-   the `AuroraAoneDevice` pattern.
+4. If it has power measurement, implement `onSocketsInit` in `device.js` —
+   this is an optional hook in `ZigBeeDoubleSocketDevice` called after both
+   endpoints are initialised. Register any additional cluster listeners there.
 
 ---
 
