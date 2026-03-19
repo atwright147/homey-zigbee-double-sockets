@@ -40,9 +40,7 @@
       "class": "socket",
       "capabilities": [
         "onoff",
-        "onoff.socket2",
-        "measure_power",
-        "measure_power.socket2"
+        "onoff.socket2"
       ],
       "capabilitiesOptions": {
         "onoff": {
@@ -50,17 +48,19 @@
         },
         "onoff.socket2": {
           "title": { "en": "Socket 2" }
-        },
-        "measure_power": {
-          "title": { "en": "Power Socket 1" }
-        },
-        "measure_power.socket2": {
-          "title": { "en": "Power Socket 2" }
         }
       },
       "zigbee": {
-        "manufacturerName": ["Aurora Lighting"],
-        "productId": ["DoubleSocket50AU"],
+        "manufacturerName": [
+          "Aurora Lighting",
+          "Aurora",
+          "AURORA",
+          "Aurora Limited"
+        ],
+        "productId": [
+          "DoubleSocket50AU",
+          "AU-A1ZBDSS"
+        ],
         "endpoints": {
           "1": {
             "clusters": [0, 3, 4, 5, 6, 2820],
