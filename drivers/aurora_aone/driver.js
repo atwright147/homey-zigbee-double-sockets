@@ -11,7 +11,7 @@ const { ZigBeeDriver } = require('homey-zigbeedriver');
  *
  * If the device shows as "Zigbee Device" in Homey instead of this driver's name,
  * it was claimed by Homey's built-in Zigbee app. Delete the device and re-pair
- * through this app. Check app logs for the [identity] line to confirm exact strings.
+ * through this app.
  *
  * Endpoints:
  *   1 – left socket  (genOnOff + haElectricalMeasurement)

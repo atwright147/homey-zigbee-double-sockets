@@ -29,8 +29,9 @@ const ZigBeeDoubleSocketDevice = require('../../lib/ZigBeeDoubleSocketDevice');
  *  - Whether haElectricalMeasurement is present (power readings)
  *  - Whether there is a manuSpecificLumi cluster worth mapping
  *
- * If power measurement is available, model this file after
- * drivers/aurora_aone/device.js.
+ * If power measurement is available, add an onSocketsInit({ zclNode }) method
+ * that reads from the electricalMeasurement cluster (see ZigBeeDoubleSocketDevice
+ * for the hook pattern).
  */
 class AqaraDoubleDevice extends ZigBeeDoubleSocketDevice {
   // Inherits dual on/off from ZigBeeDoubleSocketDevice.
