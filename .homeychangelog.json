@@ -1,5 +1,8 @@
 {
   "1.0.0": {
     "en": "Created new App"
+  },
+  "1.1.0": {
+    "en": "Added flow cards for second socket"
   }
 }
