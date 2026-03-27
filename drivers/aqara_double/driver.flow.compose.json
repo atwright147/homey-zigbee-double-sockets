@@ -1,6 +1,24 @@
 {
   "triggers": [
     {
+      "id": "aqara-double_socket1_turned_on",
+      "title": {
+        "en": "Socket 1 turned on"
+      },
+      "titleFormatted": {
+        "en": "Socket 1 turned on"
+      }
+    },
+    {
+      "id": "aqara-double_socket1_turned_off",
+      "title": {
+        "en": "Socket 1 turned off"
+      },
+      "titleFormatted": {
+        "en": "Socket 1 turned off"
+      }
+    },
+    {
       "id": "aqara-double_socket2_turned_on",
       "title": {
         "en": "Socket 2 turned on"
@@ -21,6 +39,15 @@
   ],
   "conditions": [
     {
+      "id": "aqara-double_socket1_is_on",
+      "title": {
+        "en": "Socket 1 !{{is|is not}} on"
+      },
+      "titleFormatted": {
+        "en": "Socket 1 !{{is|is not}} on"
+      }
+    },
+    {
       "id": "aqara-double_socket2_is_on",
       "title": {
         "en": "Socket 2 !{{is|is not}} on"
@@ -31,6 +58,33 @@
     }
   ],
   "actions": [
+    {
+      "id": "aqara-double_socket1_turn_on",
+      "title": {
+        "en": "Turn on Socket 1"
+      },
+      "titleFormatted": {
+        "en": "Turn on Socket 1"
+      }
+    },
+    {
+      "id": "aqara-double_socket1_turn_off",
+      "title": {
+        "en": "Turn off Socket 1"
+      },
+      "titleFormatted": {
+        "en": "Turn off Socket 1"
+      }
+    },
+    {
+      "id": "aqara-double_socket1_toggle",
+      "title": {
+        "en": "Toggle Socket 1"
+      },
+      "titleFormatted": {
+        "en": "Toggle Socket 1"
+      }
+    },
     {
       "id": "aqara-double_socket2_turn_on",
       "title": {

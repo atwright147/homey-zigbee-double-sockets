@@ -43,6 +43,38 @@
   "flow": {
     "triggers": [
       {
+        "id": "aqara-double_socket1_turned_on",
+        "title": {
+          "en": "Socket 1 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket1_turned_off",
+        "title": {
+          "en": "Socket 1 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
         "id": "aqara-double_socket2_turned_on",
         "title": {
           "en": "Socket 2 turned on"
@@ -75,6 +107,38 @@
         ]
       },
       {
+        "id": "aurora-aone_socket1_turned_on",
+        "title": {
+          "en": "Socket 1 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket1_turned_off",
+        "title": {
+          "en": "Socket 1 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
         "id": "aurora-aone_socket2_turned_on",
         "title": {
           "en": "Socket 2 turned on"
@@ -103,6 +167,38 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_turned_on",
+        "title": {
+          "en": "Socket 1 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_turned_off",
+        "title": {
+          "en": "Socket 1 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
           }
         ]
       },
@@ -141,6 +237,22 @@
     ],
     "conditions": [
       {
+        "id": "aqara-double_socket1_is_on",
+        "title": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
         "id": "aqara-double_socket2_is_on",
         "title": {
           "en": "Socket 2 !{{is|is not}} on"
@@ -157,6 +269,22 @@
         ]
       },
       {
+        "id": "aurora-aone_socket1_is_on",
+        "title": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
         "id": "aurora-aone_socket2_is_on",
         "title": {
           "en": "Socket 2 !{{is|is not}} on"
@@ -169,6 +297,22 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_is_on",
+        "title": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 1 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
           }
         ]
       },
@@ -190,6 +334,54 @@
       }
     ],
     "actions": [
+      {
+        "id": "aqara-double_socket1_turn_on",
+        "title": {
+          "en": "Turn on Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket1_turn_off",
+        "title": {
+          "en": "Turn off Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket1_toggle",
+        "title": {
+          "en": "Toggle Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
       {
         "id": "aqara-double_socket2_turn_on",
         "title": {
@@ -239,6 +431,54 @@
         ]
       },
       {
+        "id": "aurora-aone_socket1_turn_on",
+        "title": {
+          "en": "Turn on Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket1_turn_off",
+        "title": {
+          "en": "Turn off Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket1_toggle",
+        "title": {
+          "en": "Toggle Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
         "id": "aurora-aone_socket2_turn_on",
         "title": {
           "en": "Turn on Socket 2"
@@ -283,6 +523,54 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_turn_on",
+        "title": {
+          "en": "Turn on Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_turn_off",
+        "title": {
+          "en": "Turn off Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket1_toggle",
+        "title": {
+          "en": "Toggle Socket 1"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 1"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
           }
         ]
       },
