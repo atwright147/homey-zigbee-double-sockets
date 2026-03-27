@@ -1,6 +1,6 @@
 'use strict';
 
-const { ZigBeeDriver } = require('homey-zigbeedriver');
+const ZigBeeDoubleSocketDriver = require('../../lib/ZigBeeDoubleSocketDriver');
 
 /**
  * Aqara double socket driver.
@@ -27,6 +27,6 @@ const { ZigBeeDriver } = require('homey-zigbeedriver');
  *   lumi.plug.sp_euc02    (speculative)
  * ─────────────────────────────────────────────────────────────────────────
  */
-class AqaraDoubleDriver extends ZigBeeDriver {}
+class AqaraDoubleDriver extends ZigBeeDoubleSocketDriver {}
 
 module.exports = AqaraDoubleDriver;

@@ -1,0 +1,60 @@
+{
+  "name": {
+    "en": "Aqara Double Socket"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.socket2"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": { "en": "Socket 1" },
+      "flowTitle": { "en": "Socket 1" }
+    },
+    "onoff.socket2": {
+      "title": { "en": "Socket 2" },
+      "flowTitle": { "en": "Socket 2" }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "LUMI"
+    ],
+    "productId": [
+      "lumi.plug.sp_euc02"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [0, 4, 5, 6],
+        "bindings": [6]
+      },
+      "2": {
+        "clusters": [0, 4, 5, 6],
+        "bindings": [6]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "Press and hold the button on the socket for 5 seconds until the LED flashes rapidly, then release."
+      }
+    }
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": { "next": "add_devices" },
+      "options": { "singular": true }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "small": "./drivers/aqara_double/assets/images/small.png",
+    "large": "./drivers/aqara_double/assets/images/large.png",
+    "xlarge": "./drivers/aqara_double/assets/images/xlarge.png"
+  }
+}

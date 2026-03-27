@@ -1,6 +1,6 @@
 'use strict';
 
-const { ZigBeeDriver } = require('homey-zigbeedriver');
+const ZigBeeDoubleSocketDriver = require('../../lib/ZigBeeDoubleSocketDriver');
 
 /**
  * Aurora Aone AU-A1ZBDSS driver.
@@ -18,6 +18,6 @@ const { ZigBeeDriver } = require('homey-zigbeedriver');
  *   2 – right socket (genOnOff + haElectricalMeasurement)
  *   3 – backlight LED (genOnOff + genLevelCtrl)
  */
-class AuroraAoneDriver extends ZigBeeDriver {}
+class AuroraAoneDriver extends ZigBeeDoubleSocketDriver {}
 
 module.exports = AuroraAoneDriver;

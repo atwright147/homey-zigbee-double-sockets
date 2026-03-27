@@ -1,6 +1,6 @@
 'use strict';
 
-const { ZigBeeDriver } = require('homey-zigbeedriver');
+const ZigBeeDoubleSocketDriver = require('../../lib/ZigBeeDoubleSocketDriver');
 
 /**
  * Scolmore Click Smart+ double socket driver.
@@ -12,6 +12,6 @@ const { ZigBeeDriver } = require('homey-zigbeedriver');
  * Power measurement is not supported — Tuya firmware blocks standard ZHA
  * attribute reads on the electricalMeasurement cluster.
  */
-class ScolmoreClickDriver extends ZigBeeDriver {}
+class ScolmoreClickDriver extends ZigBeeDoubleSocketDriver {}
 
 module.exports = ScolmoreClickDriver;

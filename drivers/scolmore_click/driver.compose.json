@@ -1,0 +1,87 @@
+{
+  "name": {
+    "en": "Scolmore Click Smart+ Double Socket"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.socket2"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Socket 1"
+      },
+      "flowTitle": {
+        "en": "Socket 1"
+      }
+    },
+    "onoff.socket2": {
+      "title": {
+        "en": "Socket 2"
+      },
+      "flowTitle": {
+        "en": "Socket 2"
+      }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "_TYZB01_hlla45kx"
+    ],
+    "productId": [
+      "TS011F"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          5,
+          6
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "2": {
+        "clusters": [
+          0,
+          4,
+          5,
+          6
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/scolmore_click/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold both socket buttons simultaneously for 5 seconds until the LEDs flash, then release."
+      }
+    }
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "small": "./drivers/scolmore_click/assets/images/small.png",
+    "large": "./drivers/scolmore_click/assets/images/large.png",
+    "xlarge": "./drivers/scolmore_click/assets/images/xlarge.png"
+  }
+}

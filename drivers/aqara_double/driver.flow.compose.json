@@ -1,0 +1,62 @@
+{
+  "triggers": [
+    {
+      "id": "aqara-double_socket2_turned_on",
+      "title": {
+        "en": "Socket 2 turned on"
+      },
+      "titleFormatted": {
+        "en": "Socket 2 turned on"
+      }
+    },
+    {
+      "id": "aqara-double_socket2_turned_off",
+      "title": {
+        "en": "Socket 2 turned off"
+      },
+      "titleFormatted": {
+        "en": "Socket 2 turned off"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "id": "aqara-double_socket2_is_on",
+      "title": {
+        "en": "Socket 2 !{{is|is not}} on"
+      },
+      "titleFormatted": {
+        "en": "Socket 2 !{{is|is not}} on"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "aqara-double_socket2_turn_on",
+      "title": {
+        "en": "Turn on Socket 2"
+      },
+      "titleFormatted": {
+        "en": "Turn on Socket 2"
+      }
+    },
+    {
+      "id": "aqara-double_socket2_turn_off",
+      "title": {
+        "en": "Turn off Socket 2"
+      },
+      "titleFormatted": {
+        "en": "Turn off Socket 2"
+      }
+    },
+    {
+      "id": "aqara-double_socket2_toggle",
+      "title": {
+        "en": "Toggle Socket 2"
+      },
+      "titleFormatted": {
+        "en": "Toggle Socket 2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "name": {
+    "en": "Aurora Aone Double Socket"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.socket2"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Socket 1"
+      },
+      "flowTitle": {
+        "en": "Socket 1"
+      }
+    },
+    "onoff.socket2": {
+      "title": {
+        "en": "Socket 2"
+      },
+      "flowTitle": {
+        "en": "Socket 2"
+      }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "Aurora Lighting",
+      "Aurora",
+      "AURORA",
+      "Aurora Limited"
+    ],
+    "productId": [
+      "DoubleSocket50AU",
+      "AU-A1ZBDSS"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          2820
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "2": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          2820
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "3": {
+        "clusters": [
+          0,
+          3,
+          6,
+          8
+        ],
+        "bindings": []
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/aurora_aone/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold the button on the socket for 5 seconds until the LED flashes rapidly, then release."
+      }
+    }
+  },
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "small": "./drivers/aurora_aone/assets/images/small.png",
+    "large": "./drivers/aurora_aone/assets/images/large.png",
+    "xlarge": "./drivers/aurora_aone/assets/images/xlarge.png"
+  }
+}

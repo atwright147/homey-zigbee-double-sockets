@@ -1,0 +1,42 @@
+{
+  "id": "com.zigbee-double-socket",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Zigbee Double Socket"
+  },
+  "description": {
+    "en": "Control both sockets of your Zigbee double socket independently"
+  },
+  "brandColor": "#1E88E5",
+  "tags": {
+    "en": [
+      "zigbee",
+      "socket",
+      "double socket",
+      "outlet",
+      "smart plug"
+    ]
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "./assets/images/small.png",
+    "large": "./assets/images/large.png",
+    "xlarge": "./assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Andy Wright",
+    "email": "atwright147+homey@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/atwright147/homey-zigbee-double-socket/issues"
+  },
+  "source": "https://github.com/atwright147/homey-zigbee-double-socket"
+}

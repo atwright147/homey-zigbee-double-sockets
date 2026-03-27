@@ -1,9 +1,12 @@
 {
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.zigbee-double-socket",
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-  "platforms": ["local"],
+  "platforms": [
+    "local"
+  ],
   "name": {
     "en": "Zigbee Double Socket"
   },
@@ -12,9 +15,17 @@
   },
   "brandColor": "#1E88E5",
   "tags": {
-    "en": ["zigbee", "socket", "double socket", "outlet", "smart plug"]
+    "en": [
+      "zigbee",
+      "socket",
+      "double socket",
+      "outlet",
+      "smart plug"
+    ]
   },
-  "category": ["appliances"],
+  "category": [
+    "appliances"
+  ],
   "permissions": [],
   "images": {
     "small": "./assets/images/small.png",
@@ -29,10 +40,391 @@
     "url": "https://github.com/atwright147/homey-zigbee-double-socket/issues"
   },
   "source": "https://github.com/atwright147/homey-zigbee-double-socket",
-
+  "flow": {
+    "triggers": [
+      {
+        "id": "aqara-double_socket2_turned_on",
+        "title": {
+          "en": "Socket 2 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket2_turned_off",
+        "title": {
+          "en": "Socket 2 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_turned_on",
+        "title": {
+          "en": "Socket 2 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_turned_off",
+        "title": {
+          "en": "Socket 2 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_turned_on",
+        "title": {
+          "en": "Socket 2 turned on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_turned_off",
+        "title": {
+          "en": "Socket 2 turned off"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "aqara-double_socket2_is_on",
+        "title": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_is_on",
+        "title": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_is_on",
+        "title": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "titleFormatted": {
+          "en": "Socket 2 !{{is|is not}} on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "aqara-double_socket2_turn_on",
+        "title": {
+          "en": "Turn on Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket2_turn_off",
+        "title": {
+          "en": "Turn off Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aqara-double_socket2_toggle",
+        "title": {
+          "en": "Toggle Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aqara_double"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_turn_on",
+        "title": {
+          "en": "Turn on Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_turn_off",
+        "title": {
+          "en": "Turn off Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "aurora-aone_socket2_toggle",
+        "title": {
+          "en": "Toggle Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=aurora_aone"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_turn_on",
+        "title": {
+          "en": "Turn on Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn on Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_turn_off",
+        "title": {
+          "en": "Turn off Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Turn off Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      },
+      {
+        "id": "scolmore-click_socket2_toggle",
+        "title": {
+          "en": "Toggle Socket 2"
+        },
+        "titleFormatted": {
+          "en": "Toggle Socket 2"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=scolmore_click"
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
-      "id": "aurora_aone",
+      "name": {
+        "en": "Aqara Double Socket"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.socket2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Socket 1"
+          },
+          "flowTitle": {
+            "en": "Socket 1"
+          }
+        },
+        "onoff.socket2": {
+          "title": {
+            "en": "Socket 2"
+          },
+          "flowTitle": {
+            "en": "Socket 2"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "LUMI"
+        ],
+        "productId": [
+          "lumi.plug.sp_euc02"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Press and hold the button on the socket for 5 seconds until the LED flashes rapidly, then release."
+          }
+        }
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "./drivers/aqara_double/assets/images/small.png",
+        "large": "./drivers/aqara_double/assets/images/large.png",
+        "xlarge": "./drivers/aqara_double/assets/images/xlarge.png"
+      },
+      "id": "aqara_double"
+    },
+    {
       "name": {
         "en": "Aurora Aone Double Socket"
       },
@@ -43,10 +435,20 @@
       ],
       "capabilitiesOptions": {
         "onoff": {
-          "title": { "en": "Socket 1" }
+          "title": {
+            "en": "Socket 1"
+          },
+          "flowTitle": {
+            "en": "Socket 1"
+          }
         },
         "onoff.socket2": {
-          "title": { "en": "Socket 2" }
+          "title": {
+            "en": "Socket 2"
+          },
+          "flowTitle": {
+            "en": "Socket 2"
+          }
         }
       },
       "zigbee": {
@@ -62,15 +464,38 @@
         ],
         "endpoints": {
           "1": {
-            "clusters": [0, 3, 4, 5, 6, 2820],
-            "bindings": [6]
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              2820
+            ],
+            "bindings": [
+              6
+            ]
           },
           "2": {
-            "clusters": [0, 3, 4, 5, 6, 2820],
-            "bindings": [6]
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              2820
+            ],
+            "bindings": [
+              6
+            ]
           },
           "3": {
-            "clusters": [0, 3, 6, 8],
+            "clusters": [
+              0,
+              3,
+              6,
+              8
+            ],
             "bindings": []
           }
         },
@@ -85,8 +510,12 @@
         {
           "id": "list_devices",
           "template": "list_devices",
-          "navigation": { "next": "add_devices" },
-          "options": { "singular": true }
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
         },
         {
           "id": "add_devices",
@@ -97,11 +526,10 @@
         "small": "./drivers/aurora_aone/assets/images/small.png",
         "large": "./drivers/aurora_aone/assets/images/large.png",
         "xlarge": "./drivers/aurora_aone/assets/images/xlarge.png"
-      }
+      },
+      "id": "aurora_aone"
     },
-
     {
-      "id": "scolmore_click",
       "name": {
         "en": "Scolmore Click Smart+ Double Socket"
       },
@@ -112,10 +540,20 @@
       ],
       "capabilitiesOptions": {
         "onoff": {
-          "title": { "en": "Socket 1" }
+          "title": {
+            "en": "Socket 1"
+          },
+          "flowTitle": {
+            "en": "Socket 1"
+          }
         },
         "onoff.socket2": {
-          "title": { "en": "Socket 2" }
+          "title": {
+            "en": "Socket 2"
+          },
+          "flowTitle": {
+            "en": "Socket 2"
+          }
         }
       },
       "zigbee": {
@@ -127,12 +565,26 @@
         ],
         "endpoints": {
           "1": {
-            "clusters": [0, 4, 5, 6],
-            "bindings": [6]
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
           },
           "2": {
-            "clusters": [0, 4, 5, 6],
-            "bindings": [6]
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
           }
         },
         "learnmode": {
@@ -146,8 +598,12 @@
         {
           "id": "list_devices",
           "template": "list_devices",
-          "navigation": { "next": "add_devices" },
-          "options": { "singular": true }
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
         },
         {
           "id": "add_devices",
@@ -158,7 +614,8 @@
         "small": "./drivers/scolmore_click/assets/images/small.png",
         "large": "./drivers/scolmore_click/assets/images/large.png",
         "xlarge": "./drivers/scolmore_click/assets/images/xlarge.png"
-      }
+      },
+      "id": "scolmore_click"
     }
   ]
 }
