@@ -18,7 +18,10 @@ const ZigBeeDoubleSocketDevice = require('../../lib/ZigBeeDoubleSocketDevice');
  * fully via standard ZHA.
  */
 class ScolmoreClickDevice extends ZigBeeDoubleSocketDevice {
-  // All dual on/off logic is inherited from ZigBeeDoubleSocketDevice.
+  // Tuya TS011F does not support the configureReporting ZCL command.
+  get SUPPORTS_REPORTING() {
+    return false;
+  }
 }
 
 module.exports = ScolmoreClickDevice;
