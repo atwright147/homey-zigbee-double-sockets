@@ -9,7 +9,9 @@
   "scripts": {
     "validate": "homey app validate",
     "build": "homey app build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "homey:run": "homey app run",
+    "homey:install": "homey app install"
   },
   "dependencies": {
     "homey-zigbeedriver": "^2.2.0",
