@@ -39,6 +39,9 @@
     "onoff_socket2": {
       "label": "Socket 2"
     },
+    "dim_led": {
+      "label": "LED Brightness"
+    },
     "measure_power": {
       "socket1": "Power Socket 1"
     },

@@ -5,7 +5,8 @@
   "class": "socket",
   "capabilities": [
     "onoff",
-    "onoff.socket2"
+    "onoff.socket2",
+    "dim.led"
   ],
   "capabilitiesOptions": {
     "onoff": {
@@ -22,6 +23,14 @@
       },
       "flowTitle": {
         "en": "Socket 2"
+      }
+    },
+    "dim.led": {
+      "title": {
+        "en": "LED Brightness"
+      },
+      "flowTitle": {
+        "en": "LED Brightness"
       }
     }
   },

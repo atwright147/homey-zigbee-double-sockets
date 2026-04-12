@@ -59,7 +59,13 @@ Investigation summary:
 
 ## Endpoint 3 — backlight LED
 
-Endpoint 3 controls the illuminated ring around the physical button. It supports both on/off (via `genOnOff`) and dimming (via `genLevelCtrl`). It is intentionally left uncontrolled in this driver — the LED state tracks the socket 1 state in hardware and toggling it independently is of limited value. No bindings are registered for this endpoint.
+Endpoint 3 controls the illuminated ring around the physical button. It supports both on/off (via `genOnOff`) and dimming (via `genLevelCtrl`).
+
+This driver now exposes LED brightness as the `dim.led` sub-capability and maps it to endpoint 3 `levelControl` commands.
+
+Notes:
+- The device may still couple LED behavior to socket 1 state in hardware.
+- Some units do not emit reliable unsolicited `currentLevel` reports, so the driver performs read-after-write and startup reads to keep the UI in sync.
 
 ## Z2M / other coordinator notes
 
