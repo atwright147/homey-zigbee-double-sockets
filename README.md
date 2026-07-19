@@ -14,7 +14,7 @@ individually and use them in separate Flows.
 |---|---|---|---|---|---|
 | **Aurora Aone AU-A1ZBDSS** | `aurora_aone` | ✅ | ✅ | ❌ firmware bug² | ✅ Confirmed |
 | **Scolmore Click Smart+** | `scolmore_click` | ✅ | ✅ | ❌ Tuya firmware block¹ | ✅ Confirmed |
-| **Aqara SP-EUC02** | *(not yet active)* | — | — | — | ⚠️ Unconfirmed – hardware not tested |
+| **Aqara SP-EUC02** | `aqara_double` | ✅ | ✅ | — | ⚠️ Fingerprint unconfirmed – hardware not tested |
 
 ¹ The TS011F hardware has an `haElectricalMeasurement` cluster but Tuya firmware
 ≥1.0.5 (all units produced since Q4 2021) silently ignores all standard ZHA read
@@ -107,9 +107,10 @@ To find the correct identifiers for the Aqara or any other new device:
 
 ### Updating the fingerprint
 
-Once you know the values, edit `app.json` and update the relevant driver's
-`zigbee.manufacturerName` and `zigbee.productId` arrays.  Remove the
-placeholder guesses so only confirmed values remain.
+Once you know the values, edit the driver's `driver.compose.json` and update
+the `zigbee.manufacturerName` and `zigbee.productId` arrays. Then run
+`npx homey app build` to regenerate `app.json`. Remove the placeholder
+guesses so only confirmed values remain.
 
 ---
 
@@ -132,8 +133,8 @@ drivers/
   scolmore_click/
     driver.js
     device.js                       ← Minimal subclass; all logic in base
-  aqara_double/                     ← Not active (removed from app.json);
-    driver.js                          re-enable once fingerprint is confirmed
+  aqara_double/                     ← Active (fingerprint speculative);
+    driver.js                          confirm via Z2M before relying on pairing
     device.js
 docs/
   SCOLMORE.md                       ← Full research notes: fingerprint, endpoint
