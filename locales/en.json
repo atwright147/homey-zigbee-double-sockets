@@ -5,28 +5,28 @@
   },
   "drivers": {
     "aurora_aone": {
-      "name": "Aurora Aone Double Socket",
+      "name": "Aurora Aone",
       "pair": {
         "list_devices": {
-          "title": "Found Aurora Aone Double Sockets",
+          "title": "Found Aurora Aone sockets",
           "no_devices": "No devices found. Make sure the socket is in pairing mode."
         }
       }
     },
     "scolmore_click": {
-      "name": "Scolmore Click Smart+ Double Socket",
+      "name": "Scolmore Click",
       "pair": {
         "list_devices": {
-          "title": "Found Scolmore Click Smart+ Sockets",
+          "title": "Found Scolmore Click sockets",
           "no_devices": "No devices found. Make sure the socket is in pairing mode."
         }
       }
     },
     "aqara_double": {
-      "name": "Aqara Double Socket",
+      "name": "Aqara",
       "pair": {
         "list_devices": {
-          "title": "Found Aqara Double Sockets",
+          "title": "Found Aqara sockets",
           "no_devices": "No devices found. Make sure the socket is in pairing mode."
         }
       }
@@ -34,16 +34,12 @@
   },
   "capabilities": {
     "onoff": {
-      "socket1": "Socket 1"
-    },
-    "onoff_socket2": {
-      "label": "Socket 2"
+      "left": "Left",
+      "right": "Right"
     },
     "measure_power": {
-      "socket1": "Power Socket 1"
-    },
-    "measure_power_socket2": {
-      "label": "Power Socket 2"
+      "left": "Power Left",
+      "right": "Power Right"
     }
   },
   "errors": {

@@ -1,17 +1,17 @@
 'use strict';
 
 const ZigBeeDoubleSocketDriver = require('../../lib/ZigBeeDoubleSocketDriver');
+const ScolmoreClickDevice = require('./device');
+const ScolmoreClickSocket2Device = require('./device.socket2');
 
-/**
- * Scolmore Click Smart+ double socket driver.
- *
- * Confirmed Zigbee fingerprint:
- *   manufacturerName : _TYZB01_hlla45kx
- *   modelID          : TS011F
- *
- * Power measurement is not supported — Tuya firmware blocks standard ZHA
- * attribute reads on the electricalMeasurement cluster.
- */
-class ScolmoreClickDriver extends ZigBeeDoubleSocketDriver {}
+class ScolmoreClickDriver extends ZigBeeDoubleSocketDriver {
+
+  onMapDeviceClass(device) {
+    if (device.getData().subDeviceId === 'socket2') {
+      return ScolmoreClickSocket2Device;
+    }
+    return ScolmoreClickDevice;
+  }
+}
 
 module.exports = ScolmoreClickDriver;

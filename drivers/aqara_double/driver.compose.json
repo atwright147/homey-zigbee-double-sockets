@@ -1,22 +1,11 @@
 {
   "name": {
-    "en": "Aqara Double Socket"
+    "en": "Aqara"
   },
   "class": "socket",
   "capabilities": [
-    "onoff",
-    "onoff.socket2"
+    "onoff"
   ],
-  "capabilitiesOptions": {
-    "onoff": {
-      "title": { "en": "Socket 1" },
-      "flowTitle": { "en": "Socket 1" }
-    },
-    "onoff.socket2": {
-      "title": { "en": "Socket 2" },
-      "flowTitle": { "en": "Socket 2" }
-    }
-  },
   "zigbee": {
     "manufacturerName": [
       "LUMI"
@@ -32,6 +21,15 @@
       "2": {
         "clusters": [0, 4, 5, 6],
         "bindings": [6]
+      }
+    },
+    "devices": {
+      "socket2": {
+        "class": "socket",
+        "capabilities": ["onoff"],
+        "name": {
+          "en": "Aqara Right"
+        }
       }
     },
     "learnmode": {
