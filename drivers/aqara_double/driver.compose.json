@@ -28,7 +28,7 @@
         "class": "socket",
         "capabilities": ["onoff"],
         "name": {
-          "en": "Aqara Right"
+          "en": "Aqara [Right]"
         }
       }
     },

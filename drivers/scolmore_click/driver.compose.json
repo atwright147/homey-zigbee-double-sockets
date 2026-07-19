@@ -28,7 +28,7 @@
         "class": "socket",
         "capabilities": ["onoff"],
         "name": {
-          "en": "Scolmore Click Right"
+          "en": "Scolmore Click [Right]"
         }
       }
     },
