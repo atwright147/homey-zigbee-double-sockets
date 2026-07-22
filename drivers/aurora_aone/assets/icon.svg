@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Aurora Aone double socket icon -->
-  <rect x="5" y="18" width="90" height="64" rx="7" ry="7" fill="none" stroke="#FF6F00" stroke-width="4"/>
-  <!-- Left socket -->
-  <rect x="12" y="27" width="36" height="46" rx="4" ry="4" fill="none" stroke="#FF6F00" stroke-width="3"/>
-  <ellipse cx="30" cy="59" rx="5" ry="6" fill="#FF6F00"/>
-  <rect x="24" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
-  <rect x="33" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
-  <!-- Right socket -->
-  <rect x="52" y="27" width="36" height="46" rx="4" ry="4" fill="none" stroke="#FF6F00" stroke-width="3"/>
-  <ellipse cx="70" cy="59" rx="5" ry="6" fill="#FF6F00"/>
-  <rect x="64" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
-  <rect x="73" y="34" width="4" height="8" rx="1" fill="#FF6F00"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 954.27 954.27"><defs><style>.cls-1{fill:#fff;fill-rule:evenodd;}</style></defs><g transform="translate(0, 185.86)"><path d="M882.42,40c17.59,0,31.85,14.26,31.85,31.85v438.87c0,17.59-14.26,31.85-31.85,31.85H71.85c-17.59,0-31.85-14.26-31.85-31.85V71.85c0-17.59,14.26-31.85,31.85-31.85h810.58M882.42,0H71.85C32.23,0,0,32.23,0,71.85v438.87c0,39.62,32.23,71.85,71.85,71.85h810.58c39.62,0,71.85-32.23,71.85-71.85V71.85c0-39.62-32.23-71.85-71.85-71.85h0Z" fill="#FF6F00"/><path class="cls-1" d="M145.63,401.96h43.85v28.54h-43.85v-28.54Z"/><path class="cls-1" d="M280.67,401.96h43.85v28.54h-43.85v-28.54Z"/><path class="cls-1" d="M219.06,254.91h30.28v54.12h-30.28v-54.12Z"/><path class="cls-1" d="M624.18,401.96h43.85v28.54h-43.85v-28.54Z"/><path class="cls-1" d="M759.22,401.96h43.85v28.54h-43.85v-28.54Z"/><path class="cls-1" d="M697.61,254.91h30.28v54.12h-30.28v-54.12Z"/><path class="cls-1" d="M373.77,89.07c31.52,0,57.08,25.55,57.08,57.08s-25.55,57.08-57.08,57.08-57.08-25.55-57.08-57.08,25.55-57.08,57.08-57.08ZM373.77,99.96c25.51,0,46.19,20.68,46.19,46.19s-20.68,46.19-46.19,46.19-46.19-20.68-46.19-46.19,20.68-46.19,46.19-46.19Z"/><path class="cls-1" d="M575.63,89.07c31.52,0,57.08,25.55,57.08,57.08s-25.55,57.08-57.08,57.08-57.08-25.55-57.08-57.08,25.55-57.08,57.08-57.08ZM575.63,99.96c25.51,0,46.19,20.68,46.19,46.19s-20.68,46.19-46.19,46.19-46.19-20.68-46.19-46.19,20.68-46.19,46.19-46.19Z"/></g></svg>
