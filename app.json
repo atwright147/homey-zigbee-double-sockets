@@ -27,6 +27,7 @@
     "appliances"
   ],
   "permissions": [],
+  "support": "mailto:atwright147+homey@gmail.com",
   "images": {
     "small": "./assets/images/small.png",
     "large": "./assets/images/large.png",
@@ -46,6 +47,12 @@
         "en": "Aqara"
       },
       "class": "socket",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff"
       ],
@@ -125,6 +132,12 @@
         "en": "Aurora Aone"
       },
       "class": "socket",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff"
       ],
@@ -222,6 +235,12 @@
         "en": "Scolmore Click"
       },
       "class": "socket",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff"
       ],

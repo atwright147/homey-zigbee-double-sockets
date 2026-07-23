@@ -4,6 +4,7 @@
   },
   "class": "socket",
   "platforms": ["local"],
+  "connectivity": ["zigbee"],
   "capabilities": [
     "onoff"
   ],
