@@ -34,6 +34,7 @@
     "devices": {
       "socket2": {
         "class": "socket",
+        "platforms": ["local"],
         "capabilities": ["onoff"],
         "name": {
           "en": "Aurora Aone [Right]"
