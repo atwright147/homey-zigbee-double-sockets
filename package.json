@@ -4,7 +4,7 @@
   "description": "Control both sockets of Zigbee double sockets independently",
   "main": "app.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "validate": "homey app validate",
