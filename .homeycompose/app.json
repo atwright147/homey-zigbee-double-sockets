@@ -26,6 +26,7 @@
     "appliances"
   ],
   "permissions": [],
+  "support": "mailto:atwright147+homey@gmail.com",
   "images": {
     "small": "./assets/images/small.png",
     "large": "./assets/images/large.png",
