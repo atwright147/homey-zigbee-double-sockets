@@ -3,6 +3,7 @@
     "en": "Scolmore Click"
   },
   "class": "socket",
+  "platforms": ["local"],
   "capabilities": [
     "onoff"
   ],
@@ -26,7 +27,6 @@
     "devices": {
       "socket2": {
         "class": "socket",
-        "platforms": ["local"],
         "capabilities": ["onoff"],
         "name": {
           "en": "Scolmore Click [Right]"
