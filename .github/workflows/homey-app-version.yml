@@ -31,7 +31,7 @@ jobs:
         id: update_app_version
         with:
           version: ${{ inputs.version }}
-          changelog: ${{ inputs.changelog }}
+          changelog: '${{ inputs.changelog }}'
 
       - name: Commit & Push
         run: |
