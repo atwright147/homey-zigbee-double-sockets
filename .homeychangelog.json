@@ -4,5 +4,8 @@
   },
   "1.1.0": {
     "en": "Added flow cards for second socket"
+  },
+  "1.1.1": {
+    "en": "split sockets into seperate tiles, better icons"
   }
 }
